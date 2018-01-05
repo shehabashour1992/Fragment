@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
        android.app.FragmentManager manager =getFragmentManager();
         FragmentTransaction ft = manager.beginTransaction();
         ft.replace(R.id.main,new FirstFragment());
+
+        ft.addToBackStack(null);// if i clicked on the back button i go back to this activity works from 2nd fragment
         ft.commit();
 
     }
