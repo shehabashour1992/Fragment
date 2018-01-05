@@ -25,7 +25,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/main2"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
     </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="com.example.nh.fragment.FirstFragment"
+        android:id="@+id/frag"
+        />
+
+
 </LinearLayout>
